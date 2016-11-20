@@ -1,4 +1,4 @@
-# Pymple
+# Pymple [![Build Status](https://travis-ci.org/dareenzo/pymple.svg?branch=master)](https://travis-ci.org/dareenzo/pymple)
 
 dead simple Python Dependency Injection Container.
 
