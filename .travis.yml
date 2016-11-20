@@ -10,4 +10,4 @@ python:
   - "3.6-dev" # 3.6 development branch
   - "nightly" # currently points to 3.7-dev
 # command to run tests
-script: pytest
+script: python test.py
