@@ -41,7 +41,7 @@ class PympleTest(unittest.TestCase):
 
     def test_pymple_raise_error_when_getting_unregistered_values(self):
         with self.assertRaises(AttributeError):
-            print self.container.idontexist
+            idontexist = self.container.idontexist
 
     def test_should_pass_when_registering_variables(self):
         container = self.container
