@@ -1,37 +1,35 @@
-# Pymple [![Build Status](https://travis-ci.org/dareenzo/pymple.svg?branch=master)](https://travis-ci.org/dareenzo/pymple)
+# TinyDIC [![Build Status](https://travis-ci.org/dareenzo/tinydic.svg?branch=master)](https://travis-ci.org/dareenzo/tinydic)
 
-dead simple Python Dependency Injection Container.
+Tiny Python Dependency Injection Container.
 
-## Why *Pymple*?
+## Why *TinyDIC*?
 
 I was looking for a Dependency Injection Container in Python, googled a
 bit, but only found solutions which were huge and use constructs -- such as
 decorators and so on -- which I'm not so fond of, or at least don't
 find a good justification for their use, for such a simple and small
-thing as an IoC.
+thing as an DIC.
 
 So, inspired (or copying) the PHP [Twittee IoC](https://github.com/fabpot-graveyard/twitte)
 written by [Fabien Potencier](http://fabien.potencier.org) of [symfony](http://symfony.com) fame, I
 wrote this small class.
 
-Although this is inspired by Twittee, it doesn't fit in 140 chars,
-so I could not call it that. But thankfully, Fabien Potencier has another
-more full fledged IoC, called Pimple, and that's where I stole the name from.
-Just made it *Py* instead of *Pi* because .. err you know... it's Python.
-
-Last, but not least, I've had lots of help on [Stackoverflow reviews](http://codereview.stackexchange.com/questions/146964/simple-python-ioc) ... 
+I've had lots of help on [Stackoverflow reviews](http://codereview.stackexchange.com/questions/146964/simple-python-ioc) ... 
 to setup this -- thanks you so much!
+
+Last but not least, I've to say that this is a very tiny thing meant for small personal projects so I don't recommend production use. 
+For something more proper and mature I recommend you check [Pymple](https://github.com/BernhardPosselt/pymple)
 
 ## Installation
 
 ```sh
-pip install pymple
+pip install tinydic
 ```
 
 ## Usage
 
 ```python
-from pymple import Pymple
+from tinydic import Container
 
 
 class MailService:
@@ -63,7 +61,7 @@ class MailClient:
             self.mail_service.send_mail(a, b)
 
 # create container
-container = Pymple()
+container = Container()
 
 # register constants / params
 container.MAIL_REGEX = 'ugly long regex here'
