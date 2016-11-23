@@ -2,14 +2,14 @@ from setuptools import setup
 
 
 setup(
-    name='Pymple',
+    name='TinyDIC',
 
-    version='0.0.1',
+    version='0.1.0',
 
-    description='Dead simple Python Dependency Injection Container.',
+    description='Tiny Python Dependency Injection Container.',
     # long_description=__doc__,
 
-    url='https://github.com/dareenzo/pymple',
+    url='https://github.com/dareenzo/tinydic',
 
     author='Paulo Phagula',
     author_email='pphagula@gmail.com',
@@ -27,7 +27,7 @@ setup(
         'Programming Language :: Python',
     ],
 
-    keywords='ioc injection dependency-injection',
+    keywords='dic, ioc, dependency injection, inversion of control',
 
-    py_modules=['pymple']
+    py_modules=['tinydic']
 )

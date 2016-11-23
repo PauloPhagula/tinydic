@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
 
-class Pymple(object):
+class Container(object):
     """
-    Pymple
+    TinyDIC
     ˜˜˜˜˜˜
 
-    A dead simple Python Dependency Injection Container
+    Tiny Python Dependency Injection Container
     """
 
     def __init__(self):
