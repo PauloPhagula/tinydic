@@ -8,5 +8,10 @@ python:
   - "3.5-dev" # 3.5 development branch
   - "3.6-dev" # 3.6 development branch
   - "nightly" # currently points to 3.7-dev
+install:
+  - pip install coveralls
 # command to run tests
-script: python test_tinydic.py
+script:
+  - python test_tinydic.py
+  - coverage run --source=home test_tinydic.py
+after_success: coveralls
