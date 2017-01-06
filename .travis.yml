@@ -7,5 +7,5 @@ install:
 # command to run tests
 script:
   - python test_tinydic.py
-  - coverage run --source=home test_tinydic.py
+  - coverage run --source=tinydic test_tinydic.py
 after_success: coveralls
