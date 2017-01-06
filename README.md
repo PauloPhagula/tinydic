@@ -1,4 +1,4 @@
-# TinyDIC [![Build Status](https://travis-ci.org/dareenzo/tinydic.svg?branch=master)](https://travis-ci.org/dareenzo/tinydic)
+# TinyDIC [![Build Status](https://travis-ci.org/dareenzo/tinydic.svg?branch=master)](https://travis-ci.org/dareenzo/tinydic) [![Coverage Status](https://coveralls.io/repos/github/dareenzo/tinydic/badge.svg?branch=master)](https://coveralls.io/github/dareenzo/tinydic?branch=master)
 
 Tiny Python Dependency Injection Container.
 
