@@ -1,7 +1,7 @@
 # coding: utf-8
 
-from tinydic import Container
 import unittest
+from tinydic import Container
 
 
 class Service:
@@ -39,7 +39,7 @@ class ContainerTest(unittest.TestCase):
         self.assertEqual(self.container.name, 'spam')
         self.assertEqual(self.container.lastname, 'eggs')
 
-    def test_container_raise_error_when_getting_unregistered_values(self):
+    def test_container_raises_error_when_getting_unregistered_values(self):
         with self.assertRaises(AttributeError):
             idontexist = self.container.idontexist
 
@@ -55,7 +55,6 @@ class ContainerTest(unittest.TestCase):
 
         container.domain = 'example.com'
         container.email_formatter_service = email_formatter_service
-
 
         self.assertEqual('spam@example.com', container.email_formatter_service('spam'))
 
