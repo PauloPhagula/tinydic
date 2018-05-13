@@ -18,7 +18,7 @@ LONG_DESCRIPTION = '\n'.join([file_get_contents('README.md')])
 setup(
     name='TinyDIC',
 
-    version='0.1.1',
+    version='0.1.2',
 
     description='Tiny Python Dependency Injection Container.',
     long_description=LONG_DESCRIPTION,
