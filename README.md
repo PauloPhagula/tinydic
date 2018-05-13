@@ -1,4 +1,7 @@
-# TinyDIC [![Build Status](https://travis-ci.org/dareenzo/tinydic.svg?branch=master)](https://travis-ci.org/dareenzo/tinydic) [![Coverage Status](https://coveralls.io/repos/github/dareenzo/tinydic/badge.svg?branch=master)](https://coveralls.io/github/dareenzo/tinydic?branch=master)
+# TinyDIC
+
+[![Build Status](https://travis-ci.org/dareenzo/tinydic.svg?branch=master)](https://travis-ci.org/dareenzo/tinydic)
+[![Coverage Status](https://coveralls.io/repos/github/dareenzo/tinydic/badge.svg?branch=master)](https://coveralls.io/github/dareenzo/tinydic?branch=master)
 
 Tiny Python Dependency Injection Container.
 
@@ -22,7 +25,7 @@ Just made it *Py* instead of *Pi* because .. err you know... it's Python.
 Last, but not least, I've had lots of help on [StackOverflow reviews](http://codereview.stackexchange.com/questions/146964/simple-python-ioc)
 ... to setup this -- thank you so much!
 
-Last but not least, I've to say that this is a very tiny thing meant for small personal projects so I don't recommend production use. 
+Last but not least, I've to say that this is a very tiny thing meant for small personal projects so I don't recommend production use.
 For something more proper and mature I recommend you check [Pymple](https://github.com/BernhardPosselt/pymple)
 
 ## Installation
