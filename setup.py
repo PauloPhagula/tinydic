@@ -41,7 +41,6 @@ setup(
         'Programming Language :: Python',
     ],
 
-    keywords='dic, ioc, dependency injection, inversion of control',
-
+    keywords=('dic', 'ioc', 'dependency injection', 'inversion of control'),
     py_modules=['tinydic']
 )
