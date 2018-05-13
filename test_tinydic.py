@@ -14,6 +14,7 @@ class Service:
 
 
 class Client:
+
     def __init__(self, service):
         self.service = service
 
@@ -32,18 +33,18 @@ class ContainerTest(unittest.TestCase):
     def setUp(self):
         self.container = Container()
 
-    def test_should_pass_when_registering_contants(self):
+    def test_registers_constants(self):
         self.container.name = 'spam'
         self.container.lastname = 'eggs'
 
         self.assertEqual(self.container.name, 'spam')
         self.assertEqual(self.container.lastname, 'eggs')
 
-    def test_container_raises_error_when_getting_unregistered_values(self):
+    def test_raises_error_when_getting_unregistered_values(self):
         with self.assertRaises(AttributeError):
             idontexist = self.container.idontexist
 
-    def test_should_pass_when_registering_variables(self):
+    def test_registers_variables(self):
         container = self.container
         container.setting = 'MyConfigSetting'
         container.service = lambda c: Service(c.setting)
@@ -59,13 +60,13 @@ class ContainerTest(unittest.TestCase):
         self.assertEqual('spam@example.com', container.email_formatter_service('spam'))
 
 
-    def test_container_returns_different_instances_for_services_not_registed_as_constants(self):
+    def test_returns_different_instances_for_services_registed_as_non_constants(self):
         container = self.container
         container.service = lambda c: Service('dih')
         self.assertNotEqual(container.service, container.service)
 
 
-    def test_container_returns_same_instance_for_services_registered_as_constants(self):
+    def test_returns_same_instance_for_services_registered_as_constants(self):
         container = self.container
 
         container.register('const1', 'c1', True)
